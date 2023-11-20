@@ -8,7 +8,7 @@ function App() {
   const [pass,setPass]=useState()
   const [ress,setRess]=useState([])
   const clicke=()=>{
-    axios.post("http://localhost:8000/login",{
+    axios.post("/login",{
       user:name,
       pass:pass
     }).then((res)=>{
