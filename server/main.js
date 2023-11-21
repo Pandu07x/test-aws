@@ -36,7 +36,7 @@ app.post("/add",(req,res)=>{
     cli.query(sql,(err,resi)=>{
         if(err) throw err
         console.log(resi)
-        res.send(resi)
+        res.send("Added Sucessfully")
     })
 
 

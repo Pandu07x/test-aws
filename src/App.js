@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import axios, { Axios } from 'axios';
+import Routee from './route';
 
 function App() {
   const [name,setName]=useState()
@@ -20,13 +21,7 @@ function App() {
   }
   return (
     <div className="App">
-      <header className="App-header">
-       Usernamse: <input type='text' name='name' value={name} onChange={((e)=>setName(e.target.value))} /> <br/>
-        Password: <input type='password' name="password" value={pass} onChange={((e)=>setPass(e.target.value))} /><br/>
-        <button type='button' onClick={clicke}>Click Me</button>
-
-        <h2>{ress}</h2>
-      </header>
+      <Routee />
     </div>
   );
 }
